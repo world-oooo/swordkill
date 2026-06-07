@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3]
+
+; 대장간 방. Room.tscn 을 상속(inherit)하므로 문/벽/카메라/상호작용 로직을 모두 그대로 물려받는다.
+; 모루(Area2D)와 "Press F to Forge" 안내는 room.gd 의 _build_forge() 가 type=="forge" 일 때 코드로 생성한다.
+; 배경 이미지는 아래 ForgeBackground(Sprite2D) 의 Texture 에 직접 드래그해서 넣으면 된다.
+
+[ext_resource type="PackedScene" path="res://scenes/rooms/Room.tscn" id="1"]
+
+[node name="Room" instance=ExtResource("1")]
+
+[node name="ForgeBackground" type="Sprite2D" parent="." index="0"]
+z_index = -10
+
+[node name="Floor" parent="."]
+visible = false
+
+[node name="FloorDetails" parent="."]
+visible = false
+
+[node name="WallVisuals" parent="."]
+visible = false

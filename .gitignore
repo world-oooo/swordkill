@@ -1,0 +1,10 @@
+# Godot 4
+.godot/
+/android/
+
+# 웹/데스크톱 내보내기 결과물(용량 큼 - 저장소에 불필요)
+/build/
+
+# OS
+.DS_Store
+Thumbs.db
