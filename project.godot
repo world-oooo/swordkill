@@ -20,6 +20,10 @@ FontSetup="*res://scripts/font_setup.gd"
 GameManager="*res://scripts/game_manager.gd"
 WeaponDB="*res://scripts/weapon_db.gd"
 
+[gui]
+
+theme/custom_font="res://assets/fonts/korean.ttf"
+
 [display]
 
 window/size/viewport_width=1280
